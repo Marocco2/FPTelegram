@@ -25,11 +25,6 @@ botARRIVABENE = telegram.Bot('243076778:AAE8Cj6P5DfM5_4VcIjTWvIwQG6YRQ6eD78')
 botBORTUZZO = telegram.Bot('274890721:AAEZgWfQFxXJ3VoWTtKhEVD5f9IyaHYPeec')
 botTOTO = telegram.Bot('246745177:AAFjWc2q47f14wkCUx9bDn3bbSpaexBAwCc')
 botROSBERG = telegram.Bot('271080065:AAEYbz1i14Jq_ZrYSVUYJUMkE7y9F944p8s')
-'''
-
-
-
-'''
 
 try:
 	update_id = botMAZZONI.getUpdates()[0].update_id
