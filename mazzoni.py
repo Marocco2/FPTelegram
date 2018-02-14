@@ -118,6 +118,7 @@ def echo(botMAZZONI):
 			chat_id = update.message.chat_id
 		except AttributeError:
 			print "abort"
+			continue
 		update_id = update.update_id + 1
 
 		try:
