@@ -117,7 +117,7 @@ def echo(botMAZZONI):
 		try:
 			chat_id = update.message.chat_id
 		except AttributeError:
-			print "abort"
+			print("abort")
 			continue
 		update_id = update.update_id + 1
 
@@ -143,7 +143,7 @@ def echo(botMAZZONI):
 					if per_non_essere_troppo_ripetitivo > 5:
 						manda_tutto_il_thread_di_messaggi(chat_id,casuale)
 		except IndexError:
-			print "attrerr"
+			print("attrerr")
 			continue
 
 while True:
