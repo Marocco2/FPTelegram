@@ -27,7 +27,7 @@ botTOTO = telegram.Bot('246745177:AAFjWc2q47f14wkCUx9bDn3bbSpaexBAwCc')
 botROSBERG = telegram.Bot('271080065:AAEYbz1i14Jq_ZrYSVUYJUMkE7y9F944p8s')
 
 try:
-	update_id = botMAZZONI.getUpdates()[0].update_id
+	update_id = botING_BRUNO.getUpdates()[0].update_id
 	#print update_id
 except IndexError:
 	update_id = None
@@ -111,9 +111,9 @@ def manda_tutto_il_thread_di_messaggi(chat_id,casuale):
 		#print PERSONAGGIO,FORMATO,PAYLOAD
 		manda_messaggio_iesimo(PERSONAGGIO,FORMATO,PAYLOAD,chat_id)
 		
-def echo(botMAZZONI):
+def echo(botING_BRUNO):
 	global update_id
-	for update in botMAZZONI.getUpdates(offset=update_id, timeout=10):
+	for update in botING_BRUNO.getUpdates(offset=update_id, timeout=10):
 		try:
 			chat_id = update.message.chat_id
 		except AttributeError:
@@ -148,7 +148,7 @@ def echo(botMAZZONI):
 
 while True:
 	try:
-		echo(botMAZZONI)
+		echo(botING_BRUNO)
 	except NetworkError:
 		sleep(1)
 	except Unauthorized:
