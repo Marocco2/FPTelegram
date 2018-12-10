@@ -125,7 +125,7 @@ def echo(botING_BRUNO):
 			try:
 				if update.message.new_chat_member:  # your bot can receive updates without messages
 					new_user = update.message.new_chat_member
-					botMAZZONI.sendMessage(chat_id = chat_id, text ="Un cordiale saluto a " + new_user.first_name + " da Gianfranco Mazzoni e Ivan Capelli")
+					#botMAZZONI.sendMessage(chat_id = chat_id, text ="Un cordiale saluto a " + new_user.first_name + " da Gianfranco Mazzoni e Ivan Capelli")
 			except:
 				continue
 		
